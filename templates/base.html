@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+<link href="../static/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<header>
+  <div class="logo">
+    <a href="/">
+		<span class="AZ">AZ</span>
+		<span class="web">.web</span>
+	</a>
+		<p>Наш первый сайт</p>
+  </div>
+    <div class="head-menu">
+		<ul>
+	     <li><a href="/">Главная</a></li>
+		 <li><a href="/news">Новости</a></li>
+		 <li><a href="/about">Про нас</a></li>
+		 <li><a href="/login">Вход</a></li>
+        </ul>
+  </div>
+</header>
+<main>
+	{% block body %}{% endblock %}
+	</main>
+<footer>
+    <div class="footer-menu">
+		<ul>
+	     <li><a href="#"><img src="../static/Лого ВК-white.png" width="45"></a></li>
+		 <li><a href="#"><img src="../static/inst-White.png" width="45"></a></li>
+		 <li><a href="/index.html">
+		 <span class="AZ-f">AZ</span>
+		 <span class="web-f">.web</span></a></li>
+		 <li><a href="#"><img src="../static/twitter-white.png" width="45"></a></li>
+		 <li><a href="#"><img src="../static/Лого FB-white.png" width="45"></a></li>
+        </ul>
+    </div>
+	    </footer>
+	
+</body>
+</html>

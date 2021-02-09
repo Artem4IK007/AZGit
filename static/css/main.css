@@ -1,0 +1,128 @@
+.AZ{
+	color:#0F8EED;
+	
+}
+
+.web{
+	color:#FE4B68;
+}
+
+.logo{
+	width: 12%;
+	float: left;
+	height: 80px;
+}
+.logo a{
+	display:block;
+	margin-left: 15.9375%;
+	margin-top: 4.625%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 160.75%;
+	colour: #0F8EED;
+	text-decoration: none;
+}
+
+.logo p{
+	margin-left: 16.93%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	font-size: 80.83%;
+	color: white;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	margin: auto;
+}
+
+.head-menu{
+	width: 82.5%;
+	height: 80px;
+	float: left;
+}
+
+.head-menu ul li{
+	list-style: none;
+	float: left;
+	text-align: center;
+	display: inline;
+	width: 20.625%;
+	padding-left: 4%;
+}
+
+.head-menu ul li a{
+	display: block;
+	width: 85.68%;
+	text-decoration: none;
+	font-size: 100%;
+	color:white;
+	height: 40px;
+	padding-top: 15px;
+	cursor: pointer;
+	
+}
+.head-menu ul li a:hover{
+	background: #057AED;
+	transition: all 0.5s ease;
+}
+
+footer{
+	width: 100%;
+	background-color: black;
+	height: 80px;
+	margin: auto;
+	position: relative;
+	flex-grow: 0;
+}
+
+.footer-menu ul li{
+	list-style: none;
+	float: left;
+	text-align: center;
+	display: inline;
+	width: 15.625%;
+	padding-left: 3%;
+}
+
+.footer-menu ul li a{
+	display: block;
+	width: 85.68%;
+	text-decoration: none;
+	font-size: 100%;
+	color:white;
+	height: 3.43%;
+	padding-top: 8.56%;
+	cursor: pointer;
+}
+.AZ-f{
+	color:#0F8EED;
+	font-size: 150%;
+}
+
+.web-f{
+	color:#FE4B68;
+	font-size: 150%;
+}
+
+.footer-menu ul li{
+	margin-top: -15px
+}
+html, body{
+	min-height: 100vh;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex-grow: 1;
+}
+
+.footer-menu img:hover{
+	transform: scale(0.5);
+	transition: 0.3s
+} 
