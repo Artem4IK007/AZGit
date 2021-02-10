@@ -5,8 +5,12 @@
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    <h1>Все статьи на сайте</h1>
+<button onclick="window.location.href = '/create-news';" class="button">
+    <a href="/create-news">Создать новость</a>
+</button>
+<h1 id="zag-news">Все статьи на сайте</h1>
+
+<div class="news-space">
 
     {% if articles|length > 0 %}
 
@@ -15,8 +19,9 @@
             <h2>{{ el.title }}</h2>
             <p>{{ el.intro }}</p>
             <p><b>Дата: {{ el.date.date() }}</b></p>
-            <a href="/news/{{ el.id }}" class="btn btn-warning">Детальнее</a>
+            <button onclick="window.location.href='/news/{{ el.id }}';" class="button-read">Детальнее</button>
         </div>
+        <hr>
         {% endfor %}
     {% else  %}
     <p>У нас еще нет статей на сайте</p>
