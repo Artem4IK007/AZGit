@@ -18,6 +18,7 @@
         <div class="alert alert-info">
             <h2>{{ el.title }}</h2>
             <p>{{ el.intro }}</p>
+            <p>Автор: {{ el.author }}</p>
             <p><b>Дата: {{ el.date.date() }}</b></p>
             <button onclick="window.location.href='/news/{{ el.id }}';" class="button-read">Детальнее</button>
         </div>

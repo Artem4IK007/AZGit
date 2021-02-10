@@ -11,6 +11,7 @@
     <div class="read-news">
         <p>{{ article.text }}</p>
         <p class="date"><b>Дата: {{ article.date.date() }}</b></p>
+        <p class="author"><b>Дата: {{ article.author }}</b></p>
 
     </div>
     <button onclick="window.location.href='/news/{{ article.id }}/del';" class="btn btn-danger">Удалить</button>
